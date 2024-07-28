@@ -117,132 +117,474 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_hk_FastDDS_Publisher
+# Target rules for targets named my_example_Publisher
 
 # Build rule for target.
-my_hk_FastDDS_Publisher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_hk_FastDDS_Publisher
-.PHONY : my_hk_FastDDS_Publisher
+my_example_Publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_example_Publisher
+.PHONY : my_example_Publisher
 
 # fast build rule for target.
-my_hk_FastDDS_Publisher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/build
-.PHONY : my_hk_FastDDS_Publisher/fast
+my_example_Publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/build
+.PHONY : my_example_Publisher/fast
 
 #=============================================================================
-# Target rules for targets named my_hk_FastDDS_Subscriber
+# Target rules for targets named my_example_Subscriber
 
 # Build rule for target.
-my_hk_FastDDS_Subscriber: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_hk_FastDDS_Subscriber
-.PHONY : my_hk_FastDDS_Subscriber
+my_example_Subscriber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_example_Subscriber
+.PHONY : my_example_Subscriber
 
 # fast build rule for target.
-my_hk_FastDDS_Subscriber/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/build
-.PHONY : my_hk_FastDDS_Subscriber/fast
+my_example_Subscriber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/build
+.PHONY : my_example_Subscriber/fast
 
-src/hk_image.o: src/hk_image.cxx.o
-.PHONY : src/hk_image.o
+#=============================================================================
+# Target rules for targets named my_SharedMemory_Publisher
+
+# Build rule for target.
+my_SharedMemory_Publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_SharedMemory_Publisher
+.PHONY : my_SharedMemory_Publisher
+
+# fast build rule for target.
+my_SharedMemory_Publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/build
+.PHONY : my_SharedMemory_Publisher/fast
+
+#=============================================================================
+# Target rules for targets named my_SharedMemory_Subscriber
+
+# Build rule for target.
+my_SharedMemory_Subscriber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_SharedMemory_Subscriber
+.PHONY : my_SharedMemory_Subscriber
+
+# fast build rule for target.
+my_SharedMemory_Subscriber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/build
+.PHONY : my_SharedMemory_Subscriber/fast
+
+#=============================================================================
+# Target rules for targets named my_DataSharing_Publisher
+
+# Build rule for target.
+my_DataSharing_Publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_DataSharing_Publisher
+.PHONY : my_DataSharing_Publisher
+
+# fast build rule for target.
+my_DataSharing_Publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/build
+.PHONY : my_DataSharing_Publisher/fast
+
+#=============================================================================
+# Target rules for targets named my_DataSharing_Subscriber
+
+# Build rule for target.
+my_DataSharing_Subscriber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_DataSharing_Subscriber
+.PHONY : my_DataSharing_Subscriber
+
+# fast build rule for target.
+my_DataSharing_Subscriber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/build
+.PHONY : my_DataSharing_Subscriber/fast
+
+#=============================================================================
+# Target rules for targets named my_ZeroCopy_Publisher
+
+# Build rule for target.
+my_ZeroCopy_Publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_ZeroCopy_Publisher
+.PHONY : my_ZeroCopy_Publisher
+
+# fast build rule for target.
+my_ZeroCopy_Publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/build
+.PHONY : my_ZeroCopy_Publisher/fast
+
+#=============================================================================
+# Target rules for targets named my_ZeroCopy_Subscriber
+
+# Build rule for target.
+my_ZeroCopy_Subscriber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_ZeroCopy_Subscriber
+.PHONY : my_ZeroCopy_Subscriber
+
+# fast build rule for target.
+my_ZeroCopy_Subscriber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/build
+.PHONY : my_ZeroCopy_Subscriber/fast
+
+src/DataSharing/hk_image_Publisher.o: src/DataSharing/hk_image_Publisher.cpp.o
+.PHONY : src/DataSharing/hk_image_Publisher.o
 
 # target to build an object file
-src/hk_image.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/src/hk_image.cxx.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/src/hk_image.cxx.o
-.PHONY : src/hk_image.cxx.o
+src/DataSharing/hk_image_Publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/src/DataSharing/hk_image_Publisher.cpp.o
+.PHONY : src/DataSharing/hk_image_Publisher.cpp.o
 
-src/hk_image.i: src/hk_image.cxx.i
-.PHONY : src/hk_image.i
+src/DataSharing/hk_image_Publisher.i: src/DataSharing/hk_image_Publisher.cpp.i
+.PHONY : src/DataSharing/hk_image_Publisher.i
 
 # target to preprocess a source file
-src/hk_image.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/src/hk_image.cxx.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/src/hk_image.cxx.i
-.PHONY : src/hk_image.cxx.i
+src/DataSharing/hk_image_Publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/src/DataSharing/hk_image_Publisher.cpp.i
+.PHONY : src/DataSharing/hk_image_Publisher.cpp.i
 
-src/hk_image.s: src/hk_image.cxx.s
-.PHONY : src/hk_image.s
+src/DataSharing/hk_image_Publisher.s: src/DataSharing/hk_image_Publisher.cpp.s
+.PHONY : src/DataSharing/hk_image_Publisher.s
 
 # target to generate assembly for a file
-src/hk_image.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/src/hk_image.cxx.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/src/hk_image.cxx.s
-.PHONY : src/hk_image.cxx.s
+src/DataSharing/hk_image_Publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/src/DataSharing/hk_image_Publisher.cpp.s
+.PHONY : src/DataSharing/hk_image_Publisher.cpp.s
 
-src/hk_imagePubSubTypes.o: src/hk_imagePubSubTypes.cxx.o
-.PHONY : src/hk_imagePubSubTypes.o
+src/DataSharing/hk_image_Subscriber.o: src/DataSharing/hk_image_Subscriber.cpp.o
+.PHONY : src/DataSharing/hk_image_Subscriber.o
 
 # target to build an object file
-src/hk_imagePubSubTypes.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/src/hk_imagePubSubTypes.cxx.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/src/hk_imagePubSubTypes.cxx.o
-.PHONY : src/hk_imagePubSubTypes.cxx.o
+src/DataSharing/hk_image_Subscriber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/src/DataSharing/hk_image_Subscriber.cpp.o
+.PHONY : src/DataSharing/hk_image_Subscriber.cpp.o
 
-src/hk_imagePubSubTypes.i: src/hk_imagePubSubTypes.cxx.i
-.PHONY : src/hk_imagePubSubTypes.i
+src/DataSharing/hk_image_Subscriber.i: src/DataSharing/hk_image_Subscriber.cpp.i
+.PHONY : src/DataSharing/hk_image_Subscriber.i
 
 # target to preprocess a source file
-src/hk_imagePubSubTypes.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/src/hk_imagePubSubTypes.cxx.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/src/hk_imagePubSubTypes.cxx.i
-.PHONY : src/hk_imagePubSubTypes.cxx.i
+src/DataSharing/hk_image_Subscriber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/src/DataSharing/hk_image_Subscriber.cpp.i
+.PHONY : src/DataSharing/hk_image_Subscriber.cpp.i
 
-src/hk_imagePubSubTypes.s: src/hk_imagePubSubTypes.cxx.s
-.PHONY : src/hk_imagePubSubTypes.s
+src/DataSharing/hk_image_Subscriber.s: src/DataSharing/hk_image_Subscriber.cpp.s
+.PHONY : src/DataSharing/hk_image_Subscriber.s
 
 # target to generate assembly for a file
-src/hk_imagePubSubTypes.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/src/hk_imagePubSubTypes.cxx.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/src/hk_imagePubSubTypes.cxx.s
-.PHONY : src/hk_imagePubSubTypes.cxx.s
+src/DataSharing/hk_image_Subscriber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/src/DataSharing/hk_image_Subscriber.cpp.s
+.PHONY : src/DataSharing/hk_image_Subscriber.cpp.s
 
-src/hk_image_Publisher.o: src/hk_image_Publisher.cpp.o
-.PHONY : src/hk_image_Publisher.o
+src/Shared_memory/hk_image.o: src/Shared_memory/hk_image.cxx.o
+.PHONY : src/Shared_memory/hk_image.o
 
 # target to build an object file
-src/hk_image_Publisher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/src/hk_image_Publisher.cpp.o
-.PHONY : src/hk_image_Publisher.cpp.o
+src/Shared_memory/hk_image.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/src/Shared_memory/hk_image.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/src/Shared_memory/hk_image.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/src/Shared_memory/hk_image.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/src/Shared_memory/hk_image.cxx.o
+.PHONY : src/Shared_memory/hk_image.cxx.o
 
-src/hk_image_Publisher.i: src/hk_image_Publisher.cpp.i
-.PHONY : src/hk_image_Publisher.i
+src/Shared_memory/hk_image.i: src/Shared_memory/hk_image.cxx.i
+.PHONY : src/Shared_memory/hk_image.i
 
 # target to preprocess a source file
-src/hk_image_Publisher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/src/hk_image_Publisher.cpp.i
-.PHONY : src/hk_image_Publisher.cpp.i
+src/Shared_memory/hk_image.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/src/Shared_memory/hk_image.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/src/Shared_memory/hk_image.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/src/Shared_memory/hk_image.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/src/Shared_memory/hk_image.cxx.i
+.PHONY : src/Shared_memory/hk_image.cxx.i
 
-src/hk_image_Publisher.s: src/hk_image_Publisher.cpp.s
-.PHONY : src/hk_image_Publisher.s
+src/Shared_memory/hk_image.s: src/Shared_memory/hk_image.cxx.s
+.PHONY : src/Shared_memory/hk_image.s
 
 # target to generate assembly for a file
-src/hk_image_Publisher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/src/hk_image_Publisher.cpp.s
-.PHONY : src/hk_image_Publisher.cpp.s
+src/Shared_memory/hk_image.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/src/Shared_memory/hk_image.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/src/Shared_memory/hk_image.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/src/Shared_memory/hk_image.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/src/Shared_memory/hk_image.cxx.s
+.PHONY : src/Shared_memory/hk_image.cxx.s
 
-src/hk_image_Subscriber.o: src/hk_image_Subscriber.cpp.o
-.PHONY : src/hk_image_Subscriber.o
+src/Shared_memory/hk_imagePubSubTypes.o: src/Shared_memory/hk_imagePubSubTypes.cxx.o
+.PHONY : src/Shared_memory/hk_imagePubSubTypes.o
 
 # target to build an object file
-src/hk_image_Subscriber.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/src/hk_image_Subscriber.cpp.o
-.PHONY : src/hk_image_Subscriber.cpp.o
+src/Shared_memory/hk_imagePubSubTypes.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.o
+.PHONY : src/Shared_memory/hk_imagePubSubTypes.cxx.o
 
-src/hk_image_Subscriber.i: src/hk_image_Subscriber.cpp.i
-.PHONY : src/hk_image_Subscriber.i
+src/Shared_memory/hk_imagePubSubTypes.i: src/Shared_memory/hk_imagePubSubTypes.cxx.i
+.PHONY : src/Shared_memory/hk_imagePubSubTypes.i
 
 # target to preprocess a source file
-src/hk_image_Subscriber.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/src/hk_image_Subscriber.cpp.i
-.PHONY : src/hk_image_Subscriber.cpp.i
+src/Shared_memory/hk_imagePubSubTypes.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.i
+.PHONY : src/Shared_memory/hk_imagePubSubTypes.cxx.i
 
-src/hk_image_Subscriber.s: src/hk_image_Subscriber.cpp.s
-.PHONY : src/hk_image_Subscriber.s
+src/Shared_memory/hk_imagePubSubTypes.s: src/Shared_memory/hk_imagePubSubTypes.cxx.s
+.PHONY : src/Shared_memory/hk_imagePubSubTypes.s
 
 # target to generate assembly for a file
-src/hk_image_Subscriber.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/src/hk_image_Subscriber.cpp.s
-.PHONY : src/hk_image_Subscriber.cpp.s
+src/Shared_memory/hk_imagePubSubTypes.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/src/Shared_memory/hk_imagePubSubTypes.cxx.s
+.PHONY : src/Shared_memory/hk_imagePubSubTypes.cxx.s
+
+src/Shared_memory/hk_image_Publisher.o: src/Shared_memory/hk_image_Publisher.cpp.o
+.PHONY : src/Shared_memory/hk_image_Publisher.o
+
+# target to build an object file
+src/Shared_memory/hk_image_Publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/src/Shared_memory/hk_image_Publisher.cpp.o
+.PHONY : src/Shared_memory/hk_image_Publisher.cpp.o
+
+src/Shared_memory/hk_image_Publisher.i: src/Shared_memory/hk_image_Publisher.cpp.i
+.PHONY : src/Shared_memory/hk_image_Publisher.i
+
+# target to preprocess a source file
+src/Shared_memory/hk_image_Publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/src/Shared_memory/hk_image_Publisher.cpp.i
+.PHONY : src/Shared_memory/hk_image_Publisher.cpp.i
+
+src/Shared_memory/hk_image_Publisher.s: src/Shared_memory/hk_image_Publisher.cpp.s
+.PHONY : src/Shared_memory/hk_image_Publisher.s
+
+# target to generate assembly for a file
+src/Shared_memory/hk_image_Publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/src/Shared_memory/hk_image_Publisher.cpp.s
+.PHONY : src/Shared_memory/hk_image_Publisher.cpp.s
+
+src/Shared_memory/hk_image_Subscriber.o: src/Shared_memory/hk_image_Subscriber.cpp.o
+.PHONY : src/Shared_memory/hk_image_Subscriber.o
+
+# target to build an object file
+src/Shared_memory/hk_image_Subscriber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/src/Shared_memory/hk_image_Subscriber.cpp.o
+.PHONY : src/Shared_memory/hk_image_Subscriber.cpp.o
+
+src/Shared_memory/hk_image_Subscriber.i: src/Shared_memory/hk_image_Subscriber.cpp.i
+.PHONY : src/Shared_memory/hk_image_Subscriber.i
+
+# target to preprocess a source file
+src/Shared_memory/hk_image_Subscriber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/src/Shared_memory/hk_image_Subscriber.cpp.i
+.PHONY : src/Shared_memory/hk_image_Subscriber.cpp.i
+
+src/Shared_memory/hk_image_Subscriber.s: src/Shared_memory/hk_image_Subscriber.cpp.s
+.PHONY : src/Shared_memory/hk_image_Subscriber.s
+
+# target to generate assembly for a file
+src/Shared_memory/hk_image_Subscriber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/src/Shared_memory/hk_image_Subscriber.cpp.s
+.PHONY : src/Shared_memory/hk_image_Subscriber.cpp.s
+
+src/Zero_Copy/hk_image.o: src/Zero_Copy/hk_image.cxx.o
+.PHONY : src/Zero_Copy/hk_image.o
+
+# target to build an object file
+src/Zero_Copy/hk_image.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/src/Zero_Copy/hk_image.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/src/Zero_Copy/hk_image.cxx.o
+.PHONY : src/Zero_Copy/hk_image.cxx.o
+
+src/Zero_Copy/hk_image.i: src/Zero_Copy/hk_image.cxx.i
+.PHONY : src/Zero_Copy/hk_image.i
+
+# target to preprocess a source file
+src/Zero_Copy/hk_image.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/src/Zero_Copy/hk_image.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/src/Zero_Copy/hk_image.cxx.i
+.PHONY : src/Zero_Copy/hk_image.cxx.i
+
+src/Zero_Copy/hk_image.s: src/Zero_Copy/hk_image.cxx.s
+.PHONY : src/Zero_Copy/hk_image.s
+
+# target to generate assembly for a file
+src/Zero_Copy/hk_image.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/src/Zero_Copy/hk_image.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/src/Zero_Copy/hk_image.cxx.s
+.PHONY : src/Zero_Copy/hk_image.cxx.s
+
+src/Zero_Copy/hk_imagePubSubTypes.o: src/Zero_Copy/hk_imagePubSubTypes.cxx.o
+.PHONY : src/Zero_Copy/hk_imagePubSubTypes.o
+
+# target to build an object file
+src/Zero_Copy/hk_imagePubSubTypes.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/src/Zero_Copy/hk_imagePubSubTypes.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/src/Zero_Copy/hk_imagePubSubTypes.cxx.o
+.PHONY : src/Zero_Copy/hk_imagePubSubTypes.cxx.o
+
+src/Zero_Copy/hk_imagePubSubTypes.i: src/Zero_Copy/hk_imagePubSubTypes.cxx.i
+.PHONY : src/Zero_Copy/hk_imagePubSubTypes.i
+
+# target to preprocess a source file
+src/Zero_Copy/hk_imagePubSubTypes.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/src/Zero_Copy/hk_imagePubSubTypes.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/src/Zero_Copy/hk_imagePubSubTypes.cxx.i
+.PHONY : src/Zero_Copy/hk_imagePubSubTypes.cxx.i
+
+src/Zero_Copy/hk_imagePubSubTypes.s: src/Zero_Copy/hk_imagePubSubTypes.cxx.s
+.PHONY : src/Zero_Copy/hk_imagePubSubTypes.s
+
+# target to generate assembly for a file
+src/Zero_Copy/hk_imagePubSubTypes.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/src/Zero_Copy/hk_imagePubSubTypes.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/src/Zero_Copy/hk_imagePubSubTypes.cxx.s
+.PHONY : src/Zero_Copy/hk_imagePubSubTypes.cxx.s
+
+src/Zero_Copy/hk_image_Publisher.o: src/Zero_Copy/hk_image_Publisher.cpp.o
+.PHONY : src/Zero_Copy/hk_image_Publisher.o
+
+# target to build an object file
+src/Zero_Copy/hk_image_Publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/src/Zero_Copy/hk_image_Publisher.cpp.o
+.PHONY : src/Zero_Copy/hk_image_Publisher.cpp.o
+
+src/Zero_Copy/hk_image_Publisher.i: src/Zero_Copy/hk_image_Publisher.cpp.i
+.PHONY : src/Zero_Copy/hk_image_Publisher.i
+
+# target to preprocess a source file
+src/Zero_Copy/hk_image_Publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/src/Zero_Copy/hk_image_Publisher.cpp.i
+.PHONY : src/Zero_Copy/hk_image_Publisher.cpp.i
+
+src/Zero_Copy/hk_image_Publisher.s: src/Zero_Copy/hk_image_Publisher.cpp.s
+.PHONY : src/Zero_Copy/hk_image_Publisher.s
+
+# target to generate assembly for a file
+src/Zero_Copy/hk_image_Publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/src/Zero_Copy/hk_image_Publisher.cpp.s
+.PHONY : src/Zero_Copy/hk_image_Publisher.cpp.s
+
+src/Zero_Copy/hk_image_Subscriber.o: src/Zero_Copy/hk_image_Subscriber.cpp.o
+.PHONY : src/Zero_Copy/hk_image_Subscriber.o
+
+# target to build an object file
+src/Zero_Copy/hk_image_Subscriber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/src/Zero_Copy/hk_image_Subscriber.cpp.o
+.PHONY : src/Zero_Copy/hk_image_Subscriber.cpp.o
+
+src/Zero_Copy/hk_image_Subscriber.i: src/Zero_Copy/hk_image_Subscriber.cpp.i
+.PHONY : src/Zero_Copy/hk_image_Subscriber.i
+
+# target to preprocess a source file
+src/Zero_Copy/hk_image_Subscriber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/src/Zero_Copy/hk_image_Subscriber.cpp.i
+.PHONY : src/Zero_Copy/hk_image_Subscriber.cpp.i
+
+src/Zero_Copy/hk_image_Subscriber.s: src/Zero_Copy/hk_image_Subscriber.cpp.s
+.PHONY : src/Zero_Copy/hk_image_Subscriber.s
+
+# target to generate assembly for a file
+src/Zero_Copy/hk_image_Subscriber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/src/Zero_Copy/hk_image_Subscriber.cpp.s
+.PHONY : src/Zero_Copy/hk_image_Subscriber.cpp.s
+
+src/example/hk_image.o: src/example/hk_image.cxx.o
+.PHONY : src/example/hk_image.o
+
+# target to build an object file
+src/example/hk_image.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/src/example/hk_image.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/src/example/hk_image.cxx.o
+.PHONY : src/example/hk_image.cxx.o
+
+src/example/hk_image.i: src/example/hk_image.cxx.i
+.PHONY : src/example/hk_image.i
+
+# target to preprocess a source file
+src/example/hk_image.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/src/example/hk_image.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/src/example/hk_image.cxx.i
+.PHONY : src/example/hk_image.cxx.i
+
+src/example/hk_image.s: src/example/hk_image.cxx.s
+.PHONY : src/example/hk_image.s
+
+# target to generate assembly for a file
+src/example/hk_image.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/src/example/hk_image.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/src/example/hk_image.cxx.s
+.PHONY : src/example/hk_image.cxx.s
+
+src/example/hk_imagePubSubTypes.o: src/example/hk_imagePubSubTypes.cxx.o
+.PHONY : src/example/hk_imagePubSubTypes.o
+
+# target to build an object file
+src/example/hk_imagePubSubTypes.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/src/example/hk_imagePubSubTypes.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/src/example/hk_imagePubSubTypes.cxx.o
+.PHONY : src/example/hk_imagePubSubTypes.cxx.o
+
+src/example/hk_imagePubSubTypes.i: src/example/hk_imagePubSubTypes.cxx.i
+.PHONY : src/example/hk_imagePubSubTypes.i
+
+# target to preprocess a source file
+src/example/hk_imagePubSubTypes.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/src/example/hk_imagePubSubTypes.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/src/example/hk_imagePubSubTypes.cxx.i
+.PHONY : src/example/hk_imagePubSubTypes.cxx.i
+
+src/example/hk_imagePubSubTypes.s: src/example/hk_imagePubSubTypes.cxx.s
+.PHONY : src/example/hk_imagePubSubTypes.s
+
+# target to generate assembly for a file
+src/example/hk_imagePubSubTypes.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/src/example/hk_imagePubSubTypes.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/src/example/hk_imagePubSubTypes.cxx.s
+.PHONY : src/example/hk_imagePubSubTypes.cxx.s
+
+src/example/hk_image_Publisher.o: src/example/hk_image_Publisher.cpp.o
+.PHONY : src/example/hk_image_Publisher.o
+
+# target to build an object file
+src/example/hk_image_Publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/src/example/hk_image_Publisher.cpp.o
+.PHONY : src/example/hk_image_Publisher.cpp.o
+
+src/example/hk_image_Publisher.i: src/example/hk_image_Publisher.cpp.i
+.PHONY : src/example/hk_image_Publisher.i
+
+# target to preprocess a source file
+src/example/hk_image_Publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/src/example/hk_image_Publisher.cpp.i
+.PHONY : src/example/hk_image_Publisher.cpp.i
+
+src/example/hk_image_Publisher.s: src/example/hk_image_Publisher.cpp.s
+.PHONY : src/example/hk_image_Publisher.s
+
+# target to generate assembly for a file
+src/example/hk_image_Publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/src/example/hk_image_Publisher.cpp.s
+.PHONY : src/example/hk_image_Publisher.cpp.s
+
+src/example/hk_image_Subscriber.o: src/example/hk_image_Subscriber.cpp.o
+.PHONY : src/example/hk_image_Subscriber.o
+
+# target to build an object file
+src/example/hk_image_Subscriber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/src/example/hk_image_Subscriber.cpp.o
+.PHONY : src/example/hk_image_Subscriber.cpp.o
+
+src/example/hk_image_Subscriber.i: src/example/hk_image_Subscriber.cpp.i
+.PHONY : src/example/hk_image_Subscriber.i
+
+# target to preprocess a source file
+src/example/hk_image_Subscriber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/src/example/hk_image_Subscriber.cpp.i
+.PHONY : src/example/hk_image_Subscriber.cpp.i
+
+src/example/hk_image_Subscriber.s: src/example/hk_image_Subscriber.cpp.s
+.PHONY : src/example/hk_image_Subscriber.s
+
+# target to generate assembly for a file
+src/example/hk_image_Subscriber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/src/example/hk_image_Subscriber.cpp.s
+.PHONY : src/example/hk_image_Subscriber.cpp.s
 
 # Help Target
 help:
@@ -252,20 +594,56 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... my_hk_FastDDS_Publisher"
-	@echo "... my_hk_FastDDS_Subscriber"
-	@echo "... src/hk_image.o"
-	@echo "... src/hk_image.i"
-	@echo "... src/hk_image.s"
-	@echo "... src/hk_imagePubSubTypes.o"
-	@echo "... src/hk_imagePubSubTypes.i"
-	@echo "... src/hk_imagePubSubTypes.s"
-	@echo "... src/hk_image_Publisher.o"
-	@echo "... src/hk_image_Publisher.i"
-	@echo "... src/hk_image_Publisher.s"
-	@echo "... src/hk_image_Subscriber.o"
-	@echo "... src/hk_image_Subscriber.i"
-	@echo "... src/hk_image_Subscriber.s"
+	@echo "... my_DataSharing_Publisher"
+	@echo "... my_DataSharing_Subscriber"
+	@echo "... my_SharedMemory_Publisher"
+	@echo "... my_SharedMemory_Subscriber"
+	@echo "... my_ZeroCopy_Publisher"
+	@echo "... my_ZeroCopy_Subscriber"
+	@echo "... my_example_Publisher"
+	@echo "... my_example_Subscriber"
+	@echo "... src/DataSharing/hk_image_Publisher.o"
+	@echo "... src/DataSharing/hk_image_Publisher.i"
+	@echo "... src/DataSharing/hk_image_Publisher.s"
+	@echo "... src/DataSharing/hk_image_Subscriber.o"
+	@echo "... src/DataSharing/hk_image_Subscriber.i"
+	@echo "... src/DataSharing/hk_image_Subscriber.s"
+	@echo "... src/Shared_memory/hk_image.o"
+	@echo "... src/Shared_memory/hk_image.i"
+	@echo "... src/Shared_memory/hk_image.s"
+	@echo "... src/Shared_memory/hk_imagePubSubTypes.o"
+	@echo "... src/Shared_memory/hk_imagePubSubTypes.i"
+	@echo "... src/Shared_memory/hk_imagePubSubTypes.s"
+	@echo "... src/Shared_memory/hk_image_Publisher.o"
+	@echo "... src/Shared_memory/hk_image_Publisher.i"
+	@echo "... src/Shared_memory/hk_image_Publisher.s"
+	@echo "... src/Shared_memory/hk_image_Subscriber.o"
+	@echo "... src/Shared_memory/hk_image_Subscriber.i"
+	@echo "... src/Shared_memory/hk_image_Subscriber.s"
+	@echo "... src/Zero_Copy/hk_image.o"
+	@echo "... src/Zero_Copy/hk_image.i"
+	@echo "... src/Zero_Copy/hk_image.s"
+	@echo "... src/Zero_Copy/hk_imagePubSubTypes.o"
+	@echo "... src/Zero_Copy/hk_imagePubSubTypes.i"
+	@echo "... src/Zero_Copy/hk_imagePubSubTypes.s"
+	@echo "... src/Zero_Copy/hk_image_Publisher.o"
+	@echo "... src/Zero_Copy/hk_image_Publisher.i"
+	@echo "... src/Zero_Copy/hk_image_Publisher.s"
+	@echo "... src/Zero_Copy/hk_image_Subscriber.o"
+	@echo "... src/Zero_Copy/hk_image_Subscriber.i"
+	@echo "... src/Zero_Copy/hk_image_Subscriber.s"
+	@echo "... src/example/hk_image.o"
+	@echo "... src/example/hk_image.i"
+	@echo "... src/example/hk_image.s"
+	@echo "... src/example/hk_imagePubSubTypes.o"
+	@echo "... src/example/hk_imagePubSubTypes.i"
+	@echo "... src/example/hk_imagePubSubTypes.s"
+	@echo "... src/example/hk_image_Publisher.o"
+	@echo "... src/example/hk_image_Publisher.i"
+	@echo "... src/example/hk_image_Publisher.s"
+	@echo "... src/example/hk_image_Subscriber.o"
+	@echo "... src/example/hk_image_Subscriber.i"
+	@echo "... src/example/hk_image_Subscriber.s"
 .PHONY : help
 
 

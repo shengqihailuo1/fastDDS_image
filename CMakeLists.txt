@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.20)
-
 project(my_hk_FastDDS)
 
 if(NOT fastcdr_FOUND)
@@ -10,7 +9,6 @@ if(NOT fastrtps_FOUND)
 endif()
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(YAML REQUIRED yaml-cpp)
-
 find_package(OpenCV 4.2.0 REQUIRED)
 
 
@@ -39,16 +37,14 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_COMPILER_IS_CLANG OR
     endif()
 endif()
 
-message(STATUS "Configuring HelloWorld publisher/subscriber example...")
-file(GLOB DDS_HK_IMAGE_SOURCES_CXX "src/*.cxx")
-
-add_executable(my_hk_FastDDS_Publisher src/hk_image_Publisher.cpp ${DDS_HK_IMAGE_SOURCES_CXX})
+#example方案
+file(GLOB src_example_cxx "src/example/*.cxx")
+add_executable(my_example_Publisher src/example/hk_image_Publisher.cpp ${src_example_cxx})
 # target_link_libraries(my_hk_FastDDS fastdds fastrtps fastcdr)
-target_link_libraries(my_hk_FastDDS_Publisher
+target_link_libraries(my_example_Publisher
   fastrtps
   fastcdr
   ${YAML_LIBRARIES}
-  #${OpenCV_LIBRARIES}
   #加载下面海康相机的.so文件并调用其API接口，实现对海康相机的控制和图像加载功能。
   MvCameraControl
   MVGigEVisionSDK
@@ -57,7 +53,68 @@ target_link_libraries(my_hk_FastDDS_Publisher
   MediaProcess
   X11
 )
+add_executable(my_example_Subscriber src/example/hk_image_Subscriber.cpp ${src_example_cxx})
+target_link_libraries(my_example_Subscriber fastrtps fastcdr ${OpenCV_LIBRARIES})
 
 
-add_executable(my_hk_FastDDS_Subscriber src/hk_image_Subscriber.cpp ${DDS_HK_IMAGE_SOURCES_CXX})
-target_link_libraries(my_hk_FastDDS_Subscriber fastrtps fastcdr ${OpenCV_LIBRARIES})
+
+#共享内存方案
+file(GLOB src_Shared_memory "src/Shared_memory/*.cxx")
+add_executable(my_SharedMemory_Publisher src/Shared_memory/hk_image_Publisher.cpp ${src_Shared_memory})
+target_link_libraries(my_SharedMemory_Publisher
+  fastrtps
+  fastcdr
+  foonathan_memory
+  ${YAML_LIBRARIES}
+  #加载下面海康相机的.so文件并调用其API接口，实现对海康相机的控制和图像加载功能。
+  MvCameraControl
+  MVGigEVisionSDK
+  MVRender
+  MvUsb3vTL
+  MediaProcess
+  X11
+)
+add_executable(my_SharedMemory_Subscriber src/Shared_memory/hk_image_Subscriber.cpp ${src_Shared_memory})
+target_link_libraries(my_SharedMemory_Subscriber fastrtps fastcdr ${OpenCV_LIBRARIES})
+
+
+#DataSharing方案
+file(GLOB src_DataSharing "src/DataSharing/*.cxx")
+add_executable(my_DataSharing_Publisher src/DataSharing/hk_image_Publisher.cpp ${src_Shared_memory})
+target_link_libraries(my_DataSharing_Publisher
+  fastrtps
+  fastcdr
+  foonathan_memory
+  ${YAML_LIBRARIES}
+  #加载下面海康相机的.so文件并调用其API接口，实现对海康相机的控制和图像加载功能。
+  MvCameraControl
+  MVGigEVisionSDK
+  MVRender
+  MvUsb3vTL
+  MediaProcess
+  X11
+)
+add_executable(my_DataSharing_Subscriber src/DataSharing/hk_image_Subscriber.cpp ${src_Shared_memory})
+target_link_libraries(my_DataSharing_Subscriber fastrtps fastcdr ${OpenCV_LIBRARIES})
+
+
+#Zeor Copy 方案
+file(GLOB src_ZeroCopy "src/Zero_Copy/*.cxx")
+add_executable(my_ZeroCopy_Publisher src/Zero_Copy/hk_image_Publisher.cpp ${src_ZeroCopy})
+target_link_libraries(my_ZeroCopy_Publisher
+  fastrtps
+  fastcdr
+  foonathan_memory
+  ${YAML_LIBRARIES}
+  #加载下面海康相机的.so文件并调用其API接口，实现海康相机的控制和图像加载功能。
+  MvCameraControl
+  MVGigEVisionSDK
+  MVRender
+  MvUsb3vTL
+  MediaProcess
+  X11
+)
+add_executable(my_ZeroCopy_Subscriber src/Zero_Copy/hk_image_Subscriber.cpp ${src_ZeroCopy})
+target_link_libraries(my_ZeroCopy_Subscriber fastrtps fastcdr ${OpenCV_LIBRARIES})
+
+

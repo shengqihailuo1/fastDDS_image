@@ -63,8 +63,14 @@ CMAKE_BINARY_DIR = /home/sqhl/Desktops/my_code/my_hk_FastDDS/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/my_hk_FastDDS_Publisher.dir/all
-all: CMakeFiles/my_hk_FastDDS_Subscriber.dir/all
+all: CMakeFiles/my_example_Publisher.dir/all
+all: CMakeFiles/my_example_Subscriber.dir/all
+all: CMakeFiles/my_SharedMemory_Publisher.dir/all
+all: CMakeFiles/my_SharedMemory_Subscriber.dir/all
+all: CMakeFiles/my_DataSharing_Publisher.dir/all
+all: CMakeFiles/my_DataSharing_Subscriber.dir/all
+all: CMakeFiles/my_ZeroCopy_Publisher.dir/all
+all: CMakeFiles/my_ZeroCopy_Subscriber.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,61 +78,223 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/my_hk_FastDDS_Publisher.dir/clean
-clean: CMakeFiles/my_hk_FastDDS_Subscriber.dir/clean
+clean: CMakeFiles/my_example_Publisher.dir/clean
+clean: CMakeFiles/my_example_Subscriber.dir/clean
+clean: CMakeFiles/my_SharedMemory_Publisher.dir/clean
+clean: CMakeFiles/my_SharedMemory_Subscriber.dir/clean
+clean: CMakeFiles/my_DataSharing_Publisher.dir/clean
+clean: CMakeFiles/my_DataSharing_Subscriber.dir/clean
+clean: CMakeFiles/my_ZeroCopy_Publisher.dir/clean
+clean: CMakeFiles/my_ZeroCopy_Subscriber.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/my_hk_FastDDS_Publisher.dir
+# Target rules for target CMakeFiles/my_example_Publisher.dir
 
 # All Build rule for target.
-CMakeFiles/my_hk_FastDDS_Publisher.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles --progress-num=1,2,3,4 "Built target my_hk_FastDDS_Publisher"
-.PHONY : CMakeFiles/my_hk_FastDDS_Publisher.dir/all
+CMakeFiles/my_example_Publisher.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles --progress-num=25,26,27,28 "Built target my_example_Publisher"
+.PHONY : CMakeFiles/my_example_Publisher.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/my_hk_FastDDS_Publisher.dir/rule: cmake_check_build_system
+CMakeFiles/my_example_Publisher.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_hk_FastDDS_Publisher.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_example_Publisher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 0
-.PHONY : CMakeFiles/my_hk_FastDDS_Publisher.dir/rule
+.PHONY : CMakeFiles/my_example_Publisher.dir/rule
 
 # Convenience name for target.
-my_hk_FastDDS_Publisher: CMakeFiles/my_hk_FastDDS_Publisher.dir/rule
-.PHONY : my_hk_FastDDS_Publisher
+my_example_Publisher: CMakeFiles/my_example_Publisher.dir/rule
+.PHONY : my_example_Publisher
 
 # clean rule for target.
-CMakeFiles/my_hk_FastDDS_Publisher.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Publisher.dir/build.make CMakeFiles/my_hk_FastDDS_Publisher.dir/clean
-.PHONY : CMakeFiles/my_hk_FastDDS_Publisher.dir/clean
+CMakeFiles/my_example_Publisher.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Publisher.dir/build.make CMakeFiles/my_example_Publisher.dir/clean
+.PHONY : CMakeFiles/my_example_Publisher.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/my_hk_FastDDS_Subscriber.dir
+# Target rules for target CMakeFiles/my_example_Subscriber.dir
 
 # All Build rule for target.
-CMakeFiles/my_hk_FastDDS_Subscriber.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles --progress-num=5,6,7,8 "Built target my_hk_FastDDS_Subscriber"
-.PHONY : CMakeFiles/my_hk_FastDDS_Subscriber.dir/all
+CMakeFiles/my_example_Subscriber.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles --progress-num=29,30,31,32 "Built target my_example_Subscriber"
+.PHONY : CMakeFiles/my_example_Subscriber.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/my_hk_FastDDS_Subscriber.dir/rule: cmake_check_build_system
+CMakeFiles/my_example_Subscriber.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_hk_FastDDS_Subscriber.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_example_Subscriber.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 0
-.PHONY : CMakeFiles/my_hk_FastDDS_Subscriber.dir/rule
+.PHONY : CMakeFiles/my_example_Subscriber.dir/rule
 
 # Convenience name for target.
-my_hk_FastDDS_Subscriber: CMakeFiles/my_hk_FastDDS_Subscriber.dir/rule
-.PHONY : my_hk_FastDDS_Subscriber
+my_example_Subscriber: CMakeFiles/my_example_Subscriber.dir/rule
+.PHONY : my_example_Subscriber
 
 # clean rule for target.
-CMakeFiles/my_hk_FastDDS_Subscriber.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_hk_FastDDS_Subscriber.dir/build.make CMakeFiles/my_hk_FastDDS_Subscriber.dir/clean
-.PHONY : CMakeFiles/my_hk_FastDDS_Subscriber.dir/clean
+CMakeFiles/my_example_Subscriber.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_example_Subscriber.dir/build.make CMakeFiles/my_example_Subscriber.dir/clean
+.PHONY : CMakeFiles/my_example_Subscriber.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/my_SharedMemory_Publisher.dir
+
+# All Build rule for target.
+CMakeFiles/my_SharedMemory_Publisher.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles --progress-num=9,10,11,12 "Built target my_SharedMemory_Publisher"
+.PHONY : CMakeFiles/my_SharedMemory_Publisher.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/my_SharedMemory_Publisher.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_SharedMemory_Publisher.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 0
+.PHONY : CMakeFiles/my_SharedMemory_Publisher.dir/rule
+
+# Convenience name for target.
+my_SharedMemory_Publisher: CMakeFiles/my_SharedMemory_Publisher.dir/rule
+.PHONY : my_SharedMemory_Publisher
+
+# clean rule for target.
+CMakeFiles/my_SharedMemory_Publisher.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Publisher.dir/build.make CMakeFiles/my_SharedMemory_Publisher.dir/clean
+.PHONY : CMakeFiles/my_SharedMemory_Publisher.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/my_SharedMemory_Subscriber.dir
+
+# All Build rule for target.
+CMakeFiles/my_SharedMemory_Subscriber.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles --progress-num=13,14,15,16 "Built target my_SharedMemory_Subscriber"
+.PHONY : CMakeFiles/my_SharedMemory_Subscriber.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/my_SharedMemory_Subscriber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_SharedMemory_Subscriber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 0
+.PHONY : CMakeFiles/my_SharedMemory_Subscriber.dir/rule
+
+# Convenience name for target.
+my_SharedMemory_Subscriber: CMakeFiles/my_SharedMemory_Subscriber.dir/rule
+.PHONY : my_SharedMemory_Subscriber
+
+# clean rule for target.
+CMakeFiles/my_SharedMemory_Subscriber.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/clean
+.PHONY : CMakeFiles/my_SharedMemory_Subscriber.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/my_DataSharing_Publisher.dir
+
+# All Build rule for target.
+CMakeFiles/my_DataSharing_Publisher.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles --progress-num=1,2,3,4 "Built target my_DataSharing_Publisher"
+.PHONY : CMakeFiles/my_DataSharing_Publisher.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/my_DataSharing_Publisher.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_DataSharing_Publisher.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 0
+.PHONY : CMakeFiles/my_DataSharing_Publisher.dir/rule
+
+# Convenience name for target.
+my_DataSharing_Publisher: CMakeFiles/my_DataSharing_Publisher.dir/rule
+.PHONY : my_DataSharing_Publisher
+
+# clean rule for target.
+CMakeFiles/my_DataSharing_Publisher.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Publisher.dir/build.make CMakeFiles/my_DataSharing_Publisher.dir/clean
+.PHONY : CMakeFiles/my_DataSharing_Publisher.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/my_DataSharing_Subscriber.dir
+
+# All Build rule for target.
+CMakeFiles/my_DataSharing_Subscriber.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles --progress-num=5,6,7,8 "Built target my_DataSharing_Subscriber"
+.PHONY : CMakeFiles/my_DataSharing_Subscriber.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/my_DataSharing_Subscriber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_DataSharing_Subscriber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 0
+.PHONY : CMakeFiles/my_DataSharing_Subscriber.dir/rule
+
+# Convenience name for target.
+my_DataSharing_Subscriber: CMakeFiles/my_DataSharing_Subscriber.dir/rule
+.PHONY : my_DataSharing_Subscriber
+
+# clean rule for target.
+CMakeFiles/my_DataSharing_Subscriber.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_DataSharing_Subscriber.dir/build.make CMakeFiles/my_DataSharing_Subscriber.dir/clean
+.PHONY : CMakeFiles/my_DataSharing_Subscriber.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/my_ZeroCopy_Publisher.dir
+
+# All Build rule for target.
+CMakeFiles/my_ZeroCopy_Publisher.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles --progress-num=17,18,19,20 "Built target my_ZeroCopy_Publisher"
+.PHONY : CMakeFiles/my_ZeroCopy_Publisher.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/my_ZeroCopy_Publisher.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_ZeroCopy_Publisher.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 0
+.PHONY : CMakeFiles/my_ZeroCopy_Publisher.dir/rule
+
+# Convenience name for target.
+my_ZeroCopy_Publisher: CMakeFiles/my_ZeroCopy_Publisher.dir/rule
+.PHONY : my_ZeroCopy_Publisher
+
+# clean rule for target.
+CMakeFiles/my_ZeroCopy_Publisher.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Publisher.dir/build.make CMakeFiles/my_ZeroCopy_Publisher.dir/clean
+.PHONY : CMakeFiles/my_ZeroCopy_Publisher.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/my_ZeroCopy_Subscriber.dir
+
+# All Build rule for target.
+CMakeFiles/my_ZeroCopy_Subscriber.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles --progress-num=21,22,23,24 "Built target my_ZeroCopy_Subscriber"
+.PHONY : CMakeFiles/my_ZeroCopy_Subscriber.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/my_ZeroCopy_Subscriber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/my_ZeroCopy_Subscriber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sqhl/Desktops/my_code/my_hk_FastDDS/build/CMakeFiles 0
+.PHONY : CMakeFiles/my_ZeroCopy_Subscriber.dir/rule
+
+# Convenience name for target.
+my_ZeroCopy_Subscriber: CMakeFiles/my_ZeroCopy_Subscriber.dir/rule
+.PHONY : my_ZeroCopy_Subscriber
+
+# clean rule for target.
+CMakeFiles/my_ZeroCopy_Subscriber.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/clean
+.PHONY : CMakeFiles/my_ZeroCopy_Subscriber.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "my_hk_FastDDS",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "my_DataSharing_Publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_DataSharing_Publisher-Debug-701700bfb1129e59f7bb.json",
+					"name" : "my_DataSharing_Publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_DataSharing_Subscriber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_DataSharing_Subscriber-Debug-5a7857efcd133e8645f6.json",
+					"name" : "my_DataSharing_Subscriber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_SharedMemory_Publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_SharedMemory_Publisher-Debug-a86af12c376d091fadab.json",
+					"name" : "my_SharedMemory_Publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_SharedMemory_Subscriber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_SharedMemory_Subscriber-Debug-4fc02e37359a797b778e.json",
+					"name" : "my_SharedMemory_Subscriber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_ZeroCopy_Publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_ZeroCopy_Publisher-Debug-ed5a21a81701d2e157cc.json",
+					"name" : "my_ZeroCopy_Publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_ZeroCopy_Subscriber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_ZeroCopy_Subscriber-Debug-7ed5b96b0180a16d7046.json",
+					"name" : "my_ZeroCopy_Subscriber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_example_Publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_example_Publisher-Debug-bb6a4734642dd610e677.json",
+					"name" : "my_example_Publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_example_Subscriber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_example_Subscriber-Debug-9d0d0b510a7e9467a278.json",
+					"name" : "my_example_Subscriber",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sqhl/Desktops/my_code/my_hk_FastDDS/build",
+		"source" : "/home/sqhl/Desktops/my_code/my_hk_FastDDS"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
