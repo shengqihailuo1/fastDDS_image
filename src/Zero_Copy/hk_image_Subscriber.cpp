@@ -115,16 +115,13 @@ void hk_image_Subscriber::SubListener::on_data_available(
                 const hk_image& sample = data[i];
 
                 //这里处理接收到的数据 sample
-                std::cout << "接收到: "<<" index: " << sample.index() <<" message: " << sample.message().data() <<" width: "<<sample.width()<<" height: "<<sample.height()<< " timestamp: "<<sample.timestamp()<< std::endl;
+                //std::cout<<"Sample "<<(reader->is_sample_valid(&sample, &infos[i]) ? " is valid" : " was replaced" ) << std::endl;
+                std::cout << "接收到: "<<" index: " << sample.index() <<" width: "<<sample.width()<<" height: "<<sample.height()<< " timestamp: "<<sample.timestamp()<< std::endl;
+                // std::cout<< " message: " << sample.message().data() <<std::endl;//Zero-Copy的message类型不能用。见官网文档https://fast-dds.docs.eprosima.com/en/v2.14.3/fastdds/use_cases/zero_copy/zero_copy.html
 
-                cv::Mat image(1024, 1280, CV_8UC3, const_cast<uint8_t*>(sample.image_data().data()));
-                cv::imshow("Image", image);
-                cv::waitKey(10);
-
-                // std::cout << "Sample received (count=" << samples << ") at address " << &sample
-                //           << (reader->is_sample_valid(&sample, &infos[i]) ? " is valid" : " was replaced" ) << std::endl
-                //           << "  index=" << sample.index() << std::endl
-                //           << "  message=" << sample.message().data() << std::endl;
+                // cv::Mat image(1024, 1280, CV_8UC3, const_cast<uint8_t*>(sample.image_data().data()));
+                // cv::imshow("Image", image);
+                // cv::waitKey(10);
             }
         }
         // 归还缓冲区持有权

@@ -61,7 +61,9 @@ bool hk_image_Publisher::init()
     DataWriterQos wqos = publisher_->get_default_datawriter_qos();
     wqos.history().depth = 10;
     wqos.durability().kind = TRANSIENT_LOCAL_DURABILITY_QOS;
-    wqos.data_sharing().automatic();
+    // datasharingqosppolicy 必须设置为AUTO(默认)或ON以启用零拷贝
+    //wqos.data_sharing().on("shared_directory");
+    wqos.data_sharing().automatic();//ZeroCopy要启动数据共享
     writer_ = publisher_->create_datawriter(topic_, wqos, &listener_);
     if (writer_ == nullptr)
     {
@@ -146,11 +148,11 @@ bool hk_image_Publisher::start_publish()
             {
 
                 //writer_->loan_sample(sample) 报错错误代码：ReturnCode_t::RETCODE_ILLEGAL_OPERATION，即：when the data type does not support loans.
-                //是不是要用基本数据类型才能加载？好像文档里面有说过?看idl文件。。。
+                //是不是要用基本数据类型才能加载？Zero-Copy官网文档里面有说过，仅支持纯类型。看idl文件。。。
 
                 hk_image* data = static_cast<hk_image*>(sample);//把样本转化为hk_image类型，这样就可以访问和操作该样本的成员变量和函数。
                 data->index() = data->index() + 1;
-                data->message("message");
+                // data->message("message");//string类型，在zero-copy中不能用。
                 data->height(MVS_cap.get_stImageInfo()->nHeight);
                 data->width(MVS_cap.get_stImageInfo()->nWidth);
                 auto now = std::chrono::system_clock::now();

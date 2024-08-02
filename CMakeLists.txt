@@ -4,6 +4,9 @@ project(my_hk_FastDDS)
 if(NOT fastcdr_FOUND)
     find_package(fastcdr 2 REQUIRED)
 endif()
+if(NOT foonathan_memory_FOUND)
+    find_package(foonathan_memory REQUIRED)
+endif()
 if(NOT fastrtps_FOUND)
     find_package(fastrtps 2.12 REQUIRED)
 endif()
@@ -118,3 +121,31 @@ add_executable(my_ZeroCopy_Subscriber src/Zero_Copy/hk_image_Subscriber.cpp ${sr
 target_link_libraries(my_ZeroCopy_Subscriber fastrtps fastcdr ${OpenCV_LIBRARIES})
 
 
+#TCP方案
+# #将指定的文件复制到生成的构建目录中，保持文件的相对路径不变。
+# #通常用于将必要的配置文件、证书文件或者其他资源文件复制到执行程序或者安装包所需的目录中，以便程序在运行时能够访问这些文件。
+# configure_file("HelloWorldSubscriber_static_disc.xml" "HelloWorldSubscriber_static_disc.xml" COPYONLY)
+# configure_file("HelloWorldPublisher_static_disc.xml" "HelloWorldPublisher_static_disc.xml" COPYONLY)
+# configure_file("dh2048.pem" "dh2048.pem" COPYONLY)
+# configure_file("serverkey.pem" "serverkey.pem" COPYONLY)
+# configure_file("servercert.pem" "servercert.pem" COPYONLY)
+# configure_file("cacert.pem" "cacert.pem" COPYONLY)
+file(GLOB src_TCP "src/TCP/*.cxx")
+add_executable(my_TCP_main src/TCP/my_TCP_main.cpp ${src_TCP} src/TCP/hk_image_Publisher.cpp src/TCP/hk_image_Subscriber.cpp)
+target_link_libraries(my_TCP_main
+  fastrtps
+  fastcdr
+  foonathan_memory
+  fastdds::optionparser
+  ${YAML_LIBRARIES}
+  ${OpenCV_LIBRARIES}
+  #加载下面海康相机的.so文件并调用其API接口，实现海康相机的控制和图像加载功能。
+  MvCameraControl
+  MVGigEVisionSDK
+  MVRender
+  MvUsb3vTL
+  MediaProcess
+  X11
+)
+# add_executable(my_TCP_Subscriber src/TCP/hk_image_Subscriber.cpp ${src_TCP})
+# target_link_libraries(my_TCP_Subscriber fastrtps fastcdr ${OpenCV_LIBRARIES})

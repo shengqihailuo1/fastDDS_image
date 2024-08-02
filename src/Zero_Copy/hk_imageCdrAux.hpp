@@ -24,7 +24,7 @@
 
 #include "hk_image.h"
 
-constexpr uint32_t hk_image_max_cdr_typesize {3932440UL};
+constexpr uint32_t hk_image_max_cdr_typesize {3932176UL};
 constexpr uint32_t hk_image_max_key_cdr_typesize {0UL};
 
 

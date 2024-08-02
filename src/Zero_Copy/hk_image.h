@@ -151,33 +151,6 @@ public:
 
 
     /*!
-     * @brief This function copies the value in member message
-     * @param _message New value to be copied in member message
-     */
-    eProsima_user_DllExport void message(
-            const std::string& _message);
-
-    /*!
-     * @brief This function moves the value in member message
-     * @param _message New value to be moved in member message
-     */
-    eProsima_user_DllExport void message(
-            std::string&& _message);
-
-    /*!
-     * @brief This function returns a constant reference to member message
-     * @return Constant reference to member message
-     */
-    eProsima_user_DllExport const std::string& message() const;
-
-    /*!
-     * @brief This function returns a reference to member message
-     * @return Reference to member message
-     */
-    eProsima_user_DllExport std::string& message();
-
-
-    /*!
      * @brief This function sets a value in member width
      * @param _width New value for member width
      */
@@ -266,7 +239,6 @@ public:
 private:
 
     uint32_t m_index{0};
-    std::string m_message;
     uint16_t m_width{0};
     uint16_t m_height{0};
     uint64_t m_timestamp{0};

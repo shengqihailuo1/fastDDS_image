@@ -448,6 +448,73 @@ build my_ZeroCopy_Subscriber: CXX_EXECUTABLE_LINKER__my_ZeroCopy_Subscriber_Debu
   TARGET_FILE = my_ZeroCopy_Subscriber
   TARGET_PDB = my_ZeroCopy_Subscriber.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target my_TCP_main
+
+
+#############################################
+# Order-only phony target for my_TCP_main
+
+build cmake_object_order_depends_target_my_TCP_main: phony || CMakeFiles/my_TCP_main.dir
+
+build CMakeFiles/my_TCP_main.dir/src/TCP/my_TCP_main.cpp.o: CXX_COMPILER__my_TCP_main_unscanned_Debug /home/sqhl/Desktops/my_code/my_hk_FastDDS/src/TCP/my_TCP_main.cpp || cmake_object_order_depends_target_my_TCP_main
+  DEFINES = -DFASTCDR_DYN_LINK -DFASTRTPS_DYN_LINK -DFOONATHAN_MEMORY=1 -DFOONATHAN_MEMORY_VERSION_MAJOR=0 -DFOONATHAN_MEMORY_VERSION_MINOR=7 -DFOONATHAN_MEMORY_VERSION_PATCH=1
+  DEP_FILE = CMakeFiles/my_TCP_main.dir/src/TCP/my_TCP_main.cpp.o.d
+  FLAGS = -g -std=c++11
+  INCLUDES = -I/home/sqhl/Desktops/my_code/my_hk_FastDDS/include -I/opt/MVS/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include/foonathan_memory -isystem /usr/local/include/fastdds/thirdparty/optionparser
+  OBJECT_DIR = CMakeFiles/my_TCP_main.dir
+  OBJECT_FILE_DIR = CMakeFiles/my_TCP_main.dir/src/TCP
+
+build CMakeFiles/my_TCP_main.dir/src/TCP/hk_image.cxx.o: CXX_COMPILER__my_TCP_main_unscanned_Debug /home/sqhl/Desktops/my_code/my_hk_FastDDS/src/TCP/hk_image.cxx || cmake_object_order_depends_target_my_TCP_main
+  DEFINES = -DFASTCDR_DYN_LINK -DFASTRTPS_DYN_LINK -DFOONATHAN_MEMORY=1 -DFOONATHAN_MEMORY_VERSION_MAJOR=0 -DFOONATHAN_MEMORY_VERSION_MINOR=7 -DFOONATHAN_MEMORY_VERSION_PATCH=1
+  DEP_FILE = CMakeFiles/my_TCP_main.dir/src/TCP/hk_image.cxx.o.d
+  FLAGS = -g -std=c++11
+  INCLUDES = -I/home/sqhl/Desktops/my_code/my_hk_FastDDS/include -I/opt/MVS/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include/foonathan_memory -isystem /usr/local/include/fastdds/thirdparty/optionparser
+  OBJECT_DIR = CMakeFiles/my_TCP_main.dir
+  OBJECT_FILE_DIR = CMakeFiles/my_TCP_main.dir/src/TCP
+
+build CMakeFiles/my_TCP_main.dir/src/TCP/hk_imagePubSubTypes.cxx.o: CXX_COMPILER__my_TCP_main_unscanned_Debug /home/sqhl/Desktops/my_code/my_hk_FastDDS/src/TCP/hk_imagePubSubTypes.cxx || cmake_object_order_depends_target_my_TCP_main
+  DEFINES = -DFASTCDR_DYN_LINK -DFASTRTPS_DYN_LINK -DFOONATHAN_MEMORY=1 -DFOONATHAN_MEMORY_VERSION_MAJOR=0 -DFOONATHAN_MEMORY_VERSION_MINOR=7 -DFOONATHAN_MEMORY_VERSION_PATCH=1
+  DEP_FILE = CMakeFiles/my_TCP_main.dir/src/TCP/hk_imagePubSubTypes.cxx.o.d
+  FLAGS = -g -std=c++11
+  INCLUDES = -I/home/sqhl/Desktops/my_code/my_hk_FastDDS/include -I/opt/MVS/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include/foonathan_memory -isystem /usr/local/include/fastdds/thirdparty/optionparser
+  OBJECT_DIR = CMakeFiles/my_TCP_main.dir
+  OBJECT_FILE_DIR = CMakeFiles/my_TCP_main.dir/src/TCP
+
+build CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Publisher.cpp.o: CXX_COMPILER__my_TCP_main_unscanned_Debug /home/sqhl/Desktops/my_code/my_hk_FastDDS/src/TCP/hk_image_Publisher.cpp || cmake_object_order_depends_target_my_TCP_main
+  DEFINES = -DFASTCDR_DYN_LINK -DFASTRTPS_DYN_LINK -DFOONATHAN_MEMORY=1 -DFOONATHAN_MEMORY_VERSION_MAJOR=0 -DFOONATHAN_MEMORY_VERSION_MINOR=7 -DFOONATHAN_MEMORY_VERSION_PATCH=1
+  DEP_FILE = CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Publisher.cpp.o.d
+  FLAGS = -g -std=c++11
+  INCLUDES = -I/home/sqhl/Desktops/my_code/my_hk_FastDDS/include -I/opt/MVS/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include/foonathan_memory -isystem /usr/local/include/fastdds/thirdparty/optionparser
+  OBJECT_DIR = CMakeFiles/my_TCP_main.dir
+  OBJECT_FILE_DIR = CMakeFiles/my_TCP_main.dir/src/TCP
+
+build CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Subscriber.cpp.o: CXX_COMPILER__my_TCP_main_unscanned_Debug /home/sqhl/Desktops/my_code/my_hk_FastDDS/src/TCP/hk_image_Subscriber.cpp || cmake_object_order_depends_target_my_TCP_main
+  DEFINES = -DFASTCDR_DYN_LINK -DFASTRTPS_DYN_LINK -DFOONATHAN_MEMORY=1 -DFOONATHAN_MEMORY_VERSION_MAJOR=0 -DFOONATHAN_MEMORY_VERSION_MINOR=7 -DFOONATHAN_MEMORY_VERSION_PATCH=1
+  DEP_FILE = CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Subscriber.cpp.o.d
+  FLAGS = -g -std=c++11
+  INCLUDES = -I/home/sqhl/Desktops/my_code/my_hk_FastDDS/include -I/opt/MVS/include -isystem /usr/include/opencv4 -isystem /opt/ros/foxy/include/foonathan_memory -isystem /usr/local/include/fastdds/thirdparty/optionparser
+  OBJECT_DIR = CMakeFiles/my_TCP_main.dir
+  OBJECT_FILE_DIR = CMakeFiles/my_TCP_main.dir/src/TCP
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target my_TCP_main
+
+
+#############################################
+# Link the executable my_TCP_main
+
+build my_TCP_main: CXX_EXECUTABLE_LINKER__my_TCP_main_Debug CMakeFiles/my_TCP_main.dir/src/TCP/my_TCP_main.cpp.o CMakeFiles/my_TCP_main.dir/src/TCP/hk_image.cxx.o CMakeFiles/my_TCP_main.dir/src/TCP/hk_imagePubSubTypes.cxx.o CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Publisher.cpp.o CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Subscriber.cpp.o | /usr/local/lib/libfastrtps.so.2.14.3 /usr/local/lib/libfastcdr.so.2.2.2 /opt/ros/foxy/lib/libfoonathan_memory-0.7.1.a /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0 /usr/lib/x86_64-linux-gnu/libtinyxml2.so /usr/lib/x86_64-linux-gnu/libtinyxml2.so /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0 /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
+  FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/usr/usr/lib/x86_64-linux-gnu:/opt/MVS/lib/64:/usr/local/lib  /usr/local/lib/libfastrtps.so.2.14.3  /usr/local/lib/libfastcdr.so.2.2.2  /opt/ros/foxy/lib/libfoonathan_memory-0.7.1.a  -lyaml-cpp  /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0  -lMvCameraControl  -lMVGigEVisionSDK  -lMVRender  -lMvUsb3vTL  -lMediaProcess  -lX11  -lpthread  -ldl  /usr/lib/x86_64-linux-gnu/libtinyxml2.so  -lpthread  -ldl  /usr/lib/x86_64-linux-gnu/libtinyxml2.so  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so  -lrt  /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0  /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
+  LINK_PATH = -L/usr/usr/lib/x86_64-linux-gnu   -L/opt/MVS/lib/64
+  OBJECT_DIR = CMakeFiles/my_TCP_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = my_TCP_main
+  TARGET_PDB = my_TCP_main.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -482,7 +549,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/sqhl/Desktops/my_code/my_hk_FastDDS/build
 
-build all: phony my_example_Publisher my_example_Subscriber my_SharedMemory_Publisher my_SharedMemory_Subscriber my_DataSharing_Publisher my_DataSharing_Subscriber my_ZeroCopy_Publisher my_ZeroCopy_Subscriber
+build all: phony my_example_Publisher my_example_Subscriber my_SharedMemory_Publisher my_SharedMemory_Subscriber my_DataSharing_Publisher my_DataSharing_Subscriber my_ZeroCopy_Publisher my_ZeroCopy_Subscriber my_TCP_main
 
 # =============================================================================
 # Built-in targets

@@ -40,6 +40,39 @@
 
 
 
+#ifndef SWIG
+namespace my_modify_name_detail {
+
+template<typename Tag, typename Tag::type M>
+struct hk_image_rob
+{
+    friend constexpr typename Tag::type get(
+            Tag)
+    {
+        return M;
+    }
+
+};
+
+struct hk_image_f
+{
+    typedef std::array<uint8_t, 3*1280*1024> hk_image::* type;
+    friend constexpr type get(
+            hk_image_f);
+};
+
+template struct hk_image_rob<hk_image_f, &hk_image::m_image_data>;
+
+template <typename T, typename Tag>
+inline size_t constexpr hk_image_offset_of()
+{
+    return ((::size_t) &reinterpret_cast<char const volatile&>((((T*)0)->*get(Tag()))));
+}
+
+} // namespace my_modify_name_detail
+#endif // ifndef SWIG
+
+
 /*!
  * @brief This class represents the TopicDataType of the type hk_image defined by the user in the IDL file.
  * @ingroup hk_image
@@ -93,7 +126,7 @@ public:
 #ifdef TOPIC_DATA_TYPE_API_HAS_IS_BOUNDED
     eProsima_user_DllExport inline bool is_bounded() const override
     {
-        return false;
+        return true;
     }
 
 #endif  // TOPIC_DATA_TYPE_API_HAS_IS_BOUNDED
@@ -101,14 +134,20 @@ public:
 #ifdef TOPIC_DATA_TYPE_API_HAS_IS_PLAIN
     eProsima_user_DllExport inline bool is_plain() const override
     {
-        return false;
+        return is_plain_xcdrv1_impl();
     }
 
     eProsima_user_DllExport inline bool is_plain(
         eprosima::fastdds::dds::DataRepresentationId_t data_representation) const override
     {
-        static_cast<void>(data_representation);
-        return false;
+        if(data_representation == eprosima::fastdds::dds::DataRepresentationId_t::XCDR2_DATA_REPRESENTATION)
+        {
+            return is_plain_xcdrv2_impl();
+        }
+        else
+        {
+            return is_plain_xcdrv1_impl();
+        }
     }
 
 #endif  // TOPIC_DATA_TYPE_API_HAS_IS_PLAIN
@@ -117,14 +156,30 @@ public:
     eProsima_user_DllExport inline bool construct_sample(
             void* memory) const override
     {
-        static_cast<void>(memory);
-        return false;
+        new (memory) hk_image();
+        return true;
     }
 
 #endif  // TOPIC_DATA_TYPE_API_HAS_CONSTRUCT_SAMPLE
 
     MD5 m_md5;
     unsigned char* m_keyBuffer;
+
+private:
+
+    static constexpr bool is_plain_xcdrv1_impl()
+    {
+        return 3932176ULL ==
+               (my_modify_name_detail::hk_image_offset_of<hk_image, my_modify_name_detail::hk_image_f>() +
+               sizeof(std::array<uint8_t, 3*1280*1024>));
+    }
+
+    static constexpr bool is_plain_xcdrv2_impl()
+    {
+        return 3932176ULL ==
+               (my_modify_name_detail::hk_image_offset_of<hk_image, my_modify_name_detail::hk_image_f>() +
+               sizeof(std::array<uint8_t, 3*1280*1024>));
+    }
 
 };
 

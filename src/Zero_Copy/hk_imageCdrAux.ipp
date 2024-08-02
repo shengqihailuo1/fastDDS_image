@@ -47,7 +47,7 @@ eProsima_user_DllExport size_t calculate_serialized_size(
     eprosima::fastcdr::EncodingAlgorithmFlag previous_encoding = calculator.get_encoding();
     size_t calculated_size {calculator.begin_calculate_type_serialized_size(
                                 eprosima::fastcdr::CdrVersion::XCDRv2 == calculator.get_cdr_version() ?
-                                eprosima::fastcdr::EncodingAlgorithmFlag::DELIMIT_CDR2 :
+                                eprosima::fastcdr::EncodingAlgorithmFlag::PLAIN_CDR2 :
                                 eprosima::fastcdr::EncodingAlgorithmFlag::PLAIN_CDR,
                                 current_alignment)};
 
@@ -56,18 +56,15 @@ eProsima_user_DllExport size_t calculate_serialized_size(
                 data.index(), current_alignment);
 
         calculated_size += calculator.calculate_member_serialized_size(eprosima::fastcdr::MemberId(1),
-                data.message(), current_alignment);
-
-        calculated_size += calculator.calculate_member_serialized_size(eprosima::fastcdr::MemberId(2),
                 data.width(), current_alignment);
 
-        calculated_size += calculator.calculate_member_serialized_size(eprosima::fastcdr::MemberId(3),
+        calculated_size += calculator.calculate_member_serialized_size(eprosima::fastcdr::MemberId(2),
                 data.height(), current_alignment);
 
-        calculated_size += calculator.calculate_member_serialized_size(eprosima::fastcdr::MemberId(4),
+        calculated_size += calculator.calculate_member_serialized_size(eprosima::fastcdr::MemberId(3),
                 data.timestamp(), current_alignment);
 
-        calculated_size += calculator.calculate_member_serialized_size(eprosima::fastcdr::MemberId(5),
+        calculated_size += calculator.calculate_member_serialized_size(eprosima::fastcdr::MemberId(4),
                 data.image_data(), current_alignment);
 
 
@@ -84,16 +81,15 @@ eProsima_user_DllExport void serialize(
     eprosima::fastcdr::Cdr::state current_state(scdr);
     scdr.begin_serialize_type(current_state,
             eprosima::fastcdr::CdrVersion::XCDRv2 == scdr.get_cdr_version() ?
-            eprosima::fastcdr::EncodingAlgorithmFlag::DELIMIT_CDR2 :
+            eprosima::fastcdr::EncodingAlgorithmFlag::PLAIN_CDR2 :
             eprosima::fastcdr::EncodingAlgorithmFlag::PLAIN_CDR);
 
     scdr
         << eprosima::fastcdr::MemberId(0) << data.index()
-        << eprosima::fastcdr::MemberId(1) << data.message()
-        << eprosima::fastcdr::MemberId(2) << data.width()
-        << eprosima::fastcdr::MemberId(3) << data.height()
-        << eprosima::fastcdr::MemberId(4) << data.timestamp()
-        << eprosima::fastcdr::MemberId(5) << data.image_data()
+        << eprosima::fastcdr::MemberId(1) << data.width()
+        << eprosima::fastcdr::MemberId(2) << data.height()
+        << eprosima::fastcdr::MemberId(3) << data.timestamp()
+        << eprosima::fastcdr::MemberId(4) << data.image_data()
 ;
     scdr.end_serialize_type(current_state);
 }
@@ -104,7 +100,7 @@ eProsima_user_DllExport void deserialize(
         hk_image& data)
 {
     cdr.deserialize_type(eprosima::fastcdr::CdrVersion::XCDRv2 == cdr.get_cdr_version() ?
-            eprosima::fastcdr::EncodingAlgorithmFlag::DELIMIT_CDR2 :
+            eprosima::fastcdr::EncodingAlgorithmFlag::PLAIN_CDR2 :
             eprosima::fastcdr::EncodingAlgorithmFlag::PLAIN_CDR,
             [&data](eprosima::fastcdr::Cdr& dcdr, const eprosima::fastcdr::MemberId& mid) -> bool
             {
@@ -116,22 +112,18 @@ eProsima_user_DllExport void deserialize(
                                             break;
 
                                         case 1:
-                                                dcdr >> data.message();
-                                            break;
-
-                                        case 2:
                                                 dcdr >> data.width();
                                             break;
 
-                                        case 3:
+                                        case 2:
                                                 dcdr >> data.height();
                                             break;
 
-                                        case 4:
+                                        case 3:
                                                 dcdr >> data.timestamp();
                                             break;
 
-                                        case 5:
+                                        case 4:
                                                 dcdr >> data.image_data();
                                             break;
 

@@ -51,7 +51,6 @@ hk_image::hk_image(
         const hk_image& x)
 {
     m_index = x.m_index;
-    m_message = x.m_message;
     m_width = x.m_width;
     m_height = x.m_height;
     m_timestamp = x.m_timestamp;
@@ -62,7 +61,6 @@ hk_image::hk_image(
         hk_image&& x) noexcept
 {
     m_index = x.m_index;
-    m_message = std::move(x.m_message);
     m_width = x.m_width;
     m_height = x.m_height;
     m_timestamp = x.m_timestamp;
@@ -74,7 +72,6 @@ hk_image& hk_image::operator =(
 {
 
     m_index = x.m_index;
-    m_message = x.m_message;
     m_width = x.m_width;
     m_height = x.m_height;
     m_timestamp = x.m_timestamp;
@@ -87,7 +84,6 @@ hk_image& hk_image::operator =(
 {
 
     m_index = x.m_index;
-    m_message = std::move(x.m_message);
     m_width = x.m_width;
     m_height = x.m_height;
     m_timestamp = x.m_timestamp;
@@ -99,7 +95,6 @@ bool hk_image::operator ==(
         const hk_image& x) const
 {
     return (m_index == x.m_index &&
-           m_message == x.m_message &&
            m_width == x.m_width &&
            m_height == x.m_height &&
            m_timestamp == x.m_timestamp &&
@@ -138,45 +133,6 @@ uint32_t hk_image::index() const
 uint32_t& hk_image::index()
 {
     return m_index;
-}
-
-
-/*!
- * @brief This function copies the value in member message
- * @param _message New value to be copied in member message
- */
-void hk_image::message(
-        const std::string& _message)
-{
-    m_message = _message;
-}
-
-/*!
- * @brief This function moves the value in member message
- * @param _message New value to be moved in member message
- */
-void hk_image::message(
-        std::string&& _message)
-{
-    m_message = std::move(_message);
-}
-
-/*!
- * @brief This function returns a constant reference to member message
- * @return Constant reference to member message
- */
-const std::string& hk_image::message() const
-{
-    return m_message;
-}
-
-/*!
- * @brief This function returns a reference to member message
- * @return Reference to member message
- */
-std::string& hk_image::message()
-{
-    return m_message;
 }
 
 

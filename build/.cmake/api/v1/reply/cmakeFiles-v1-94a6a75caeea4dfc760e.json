@@ -144,6 +144,22 @@
 		},
 		{
 			"isExternal" : true,
+			"path" : "/opt/ros/foxy/lib/foonathan_memory/cmake/foonathan_memory-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/ros/foxy/lib/foonathan_memory/cmake/foonathan_memory-config.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/ros/foxy/lib/foonathan_memory/cmake/foonathan_memory-config-none.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/opt/ros/foxy/lib/foonathan_memory/cmake/foonathan_memory-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
 			"path" : "/usr/local/share/fastrtps/cmake/fastrtps-config-version.cmake"
 		},
 		{
@@ -169,14 +185,6 @@
 		{
 			"isExternal" : true,
 			"path" : "/opt/ros/foxy/lib/foonathan_memory/cmake/foonathan_memory-config.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/ros/foxy/lib/foonathan_memory/cmake/foonathan_memory-config-none.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "/opt/ros/foxy/lib/foonathan_memory/cmake/foonathan_memory-config-version.cmake"
 		},
 		{
 			"isCMake" : true,

@@ -164,7 +164,7 @@ int main(int argc, char** argv)
     {
         std::cout<<"init() 完成！开始接收消息..."<<std::endl;
         while(1){
-            std::this_thread::sleep_for(std::chrono::milliseconds(5));//主函数休眠，在mysub里面接收到消息后调用回调函数on_data_available（）。这里处理的不是很好。。。
+            std::this_thread::sleep_for(std::chrono::seconds(5));//主函数休眠，在mysub里面接收到消息后调用回调函数on_data_available（）。这里处理的不是很好。。。
         }
     }
 

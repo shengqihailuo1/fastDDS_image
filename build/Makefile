@@ -220,6 +220,19 @@ my_ZeroCopy_Subscriber/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_ZeroCopy_Subscriber.dir/build.make CMakeFiles/my_ZeroCopy_Subscriber.dir/build
 .PHONY : my_ZeroCopy_Subscriber/fast
 
+#=============================================================================
+# Target rules for targets named my_TCP_main
+
+# Build rule for target.
+my_TCP_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_TCP_main
+.PHONY : my_TCP_main
+
+# fast build rule for target.
+my_TCP_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/build
+.PHONY : my_TCP_main/fast
+
 src/DataSharing/hk_image_Publisher.o: src/DataSharing/hk_image_Publisher.cpp.o
 .PHONY : src/DataSharing/hk_image_Publisher.o
 
@@ -381,6 +394,126 @@ src/Shared_memory/hk_image_Subscriber.s: src/Shared_memory/hk_image_Subscriber.c
 src/Shared_memory/hk_image_Subscriber.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_SharedMemory_Subscriber.dir/build.make CMakeFiles/my_SharedMemory_Subscriber.dir/src/Shared_memory/hk_image_Subscriber.cpp.s
 .PHONY : src/Shared_memory/hk_image_Subscriber.cpp.s
+
+src/TCP/hk_image.o: src/TCP/hk_image.cxx.o
+.PHONY : src/TCP/hk_image.o
+
+# target to build an object file
+src/TCP/hk_image.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_image.cxx.o
+.PHONY : src/TCP/hk_image.cxx.o
+
+src/TCP/hk_image.i: src/TCP/hk_image.cxx.i
+.PHONY : src/TCP/hk_image.i
+
+# target to preprocess a source file
+src/TCP/hk_image.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_image.cxx.i
+.PHONY : src/TCP/hk_image.cxx.i
+
+src/TCP/hk_image.s: src/TCP/hk_image.cxx.s
+.PHONY : src/TCP/hk_image.s
+
+# target to generate assembly for a file
+src/TCP/hk_image.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_image.cxx.s
+.PHONY : src/TCP/hk_image.cxx.s
+
+src/TCP/hk_imagePubSubTypes.o: src/TCP/hk_imagePubSubTypes.cxx.o
+.PHONY : src/TCP/hk_imagePubSubTypes.o
+
+# target to build an object file
+src/TCP/hk_imagePubSubTypes.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_imagePubSubTypes.cxx.o
+.PHONY : src/TCP/hk_imagePubSubTypes.cxx.o
+
+src/TCP/hk_imagePubSubTypes.i: src/TCP/hk_imagePubSubTypes.cxx.i
+.PHONY : src/TCP/hk_imagePubSubTypes.i
+
+# target to preprocess a source file
+src/TCP/hk_imagePubSubTypes.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_imagePubSubTypes.cxx.i
+.PHONY : src/TCP/hk_imagePubSubTypes.cxx.i
+
+src/TCP/hk_imagePubSubTypes.s: src/TCP/hk_imagePubSubTypes.cxx.s
+.PHONY : src/TCP/hk_imagePubSubTypes.s
+
+# target to generate assembly for a file
+src/TCP/hk_imagePubSubTypes.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_imagePubSubTypes.cxx.s
+.PHONY : src/TCP/hk_imagePubSubTypes.cxx.s
+
+src/TCP/hk_image_Publisher.o: src/TCP/hk_image_Publisher.cpp.o
+.PHONY : src/TCP/hk_image_Publisher.o
+
+# target to build an object file
+src/TCP/hk_image_Publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Publisher.cpp.o
+.PHONY : src/TCP/hk_image_Publisher.cpp.o
+
+src/TCP/hk_image_Publisher.i: src/TCP/hk_image_Publisher.cpp.i
+.PHONY : src/TCP/hk_image_Publisher.i
+
+# target to preprocess a source file
+src/TCP/hk_image_Publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Publisher.cpp.i
+.PHONY : src/TCP/hk_image_Publisher.cpp.i
+
+src/TCP/hk_image_Publisher.s: src/TCP/hk_image_Publisher.cpp.s
+.PHONY : src/TCP/hk_image_Publisher.s
+
+# target to generate assembly for a file
+src/TCP/hk_image_Publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Publisher.cpp.s
+.PHONY : src/TCP/hk_image_Publisher.cpp.s
+
+src/TCP/hk_image_Subscriber.o: src/TCP/hk_image_Subscriber.cpp.o
+.PHONY : src/TCP/hk_image_Subscriber.o
+
+# target to build an object file
+src/TCP/hk_image_Subscriber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Subscriber.cpp.o
+.PHONY : src/TCP/hk_image_Subscriber.cpp.o
+
+src/TCP/hk_image_Subscriber.i: src/TCP/hk_image_Subscriber.cpp.i
+.PHONY : src/TCP/hk_image_Subscriber.i
+
+# target to preprocess a source file
+src/TCP/hk_image_Subscriber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Subscriber.cpp.i
+.PHONY : src/TCP/hk_image_Subscriber.cpp.i
+
+src/TCP/hk_image_Subscriber.s: src/TCP/hk_image_Subscriber.cpp.s
+.PHONY : src/TCP/hk_image_Subscriber.s
+
+# target to generate assembly for a file
+src/TCP/hk_image_Subscriber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/hk_image_Subscriber.cpp.s
+.PHONY : src/TCP/hk_image_Subscriber.cpp.s
+
+src/TCP/my_TCP_main.o: src/TCP/my_TCP_main.cpp.o
+.PHONY : src/TCP/my_TCP_main.o
+
+# target to build an object file
+src/TCP/my_TCP_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/my_TCP_main.cpp.o
+.PHONY : src/TCP/my_TCP_main.cpp.o
+
+src/TCP/my_TCP_main.i: src/TCP/my_TCP_main.cpp.i
+.PHONY : src/TCP/my_TCP_main.i
+
+# target to preprocess a source file
+src/TCP/my_TCP_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/my_TCP_main.cpp.i
+.PHONY : src/TCP/my_TCP_main.cpp.i
+
+src/TCP/my_TCP_main.s: src/TCP/my_TCP_main.cpp.s
+.PHONY : src/TCP/my_TCP_main.s
+
+# target to generate assembly for a file
+src/TCP/my_TCP_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_TCP_main.dir/build.make CMakeFiles/my_TCP_main.dir/src/TCP/my_TCP_main.cpp.s
+.PHONY : src/TCP/my_TCP_main.cpp.s
 
 src/Zero_Copy/hk_image.o: src/Zero_Copy/hk_image.cxx.o
 .PHONY : src/Zero_Copy/hk_image.o
@@ -598,6 +731,7 @@ help:
 	@echo "... my_DataSharing_Subscriber"
 	@echo "... my_SharedMemory_Publisher"
 	@echo "... my_SharedMemory_Subscriber"
+	@echo "... my_TCP_main"
 	@echo "... my_ZeroCopy_Publisher"
 	@echo "... my_ZeroCopy_Subscriber"
 	@echo "... my_example_Publisher"
@@ -620,6 +754,21 @@ help:
 	@echo "... src/Shared_memory/hk_image_Subscriber.o"
 	@echo "... src/Shared_memory/hk_image_Subscriber.i"
 	@echo "... src/Shared_memory/hk_image_Subscriber.s"
+	@echo "... src/TCP/hk_image.o"
+	@echo "... src/TCP/hk_image.i"
+	@echo "... src/TCP/hk_image.s"
+	@echo "... src/TCP/hk_imagePubSubTypes.o"
+	@echo "... src/TCP/hk_imagePubSubTypes.i"
+	@echo "... src/TCP/hk_imagePubSubTypes.s"
+	@echo "... src/TCP/hk_image_Publisher.o"
+	@echo "... src/TCP/hk_image_Publisher.i"
+	@echo "... src/TCP/hk_image_Publisher.s"
+	@echo "... src/TCP/hk_image_Subscriber.o"
+	@echo "... src/TCP/hk_image_Subscriber.i"
+	@echo "... src/TCP/hk_image_Subscriber.s"
+	@echo "... src/TCP/my_TCP_main.o"
+	@echo "... src/TCP/my_TCP_main.i"
+	@echo "... src/TCP/my_TCP_main.s"
 	@echo "... src/Zero_Copy/hk_image.o"
 	@echo "... src/Zero_Copy/hk_image.i"
 	@echo "... src/Zero_Copy/hk_image.s"
